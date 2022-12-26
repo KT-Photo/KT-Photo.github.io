@@ -2,7 +2,7 @@ $(function () {
 
     // Initate masonry grid
     var $grid = $('.gallery-wrapper').masonry({
-        temSelector: '.grid-item',
+        itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',
         percentPosition: true,
     });
