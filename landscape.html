@@ -14,7 +14,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="IMG/logo1.jpg" />
     <script src="JS/scroll_down.js"></script>
-    <script src="JS/mansory.js"></script>
+    <script src="JS/masonry.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async>
@@ -28,17 +28,6 @@
                         localStorage.removeItem('firstLoad');
                 }
             })();
-            // init Masonry
-            var $grid = $('.grid').masonry({
-                itemSelector: '.grid-item',
-                percentPosition: true,
-                columnWidth: '.grid-sizer'
-            });
-
-            // layout Masonry after each image loads
-            $grid.imagesLoaded().progress(function () {
-                $grid.masonry();
-            });
         </script>
     <link href="lightbox2-2.11.3\src\css\lightbox.css" rel="stylesheet" />
     <style>
