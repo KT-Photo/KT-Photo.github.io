@@ -18,6 +18,23 @@
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async>
+            $(window).load(function () {
+                var $grid = $('.gallery-wrapper').masonry({
+                    itemSelector: '.grid-item',
+                    columnWidth: '.grid-sizer',
+                    percentPosition: true,
+                    isAnimated: true,
+                    animationOptions: {
+                        duration: 700,
+                        easing: 'linear',
+                        queue: false
+                    }
+                });
+            });
+            // Initate imagesLoaded
+            $grid.imagesLoaded().progress(function () {
+                $grid.masonry('layout');
+            });
         </script>
     <link href="lightbox2-2.11.3\src\css\lightbox.css" rel="stylesheet" />
     <style>
