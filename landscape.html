@@ -18,16 +18,6 @@
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async>
-            (function () {
-                if (window.localStorage) {
-                    if (!localStorage.getItem('firstLoad')) {
-                        localStorage['firstLoad'] = true;
-                        window.location.reload();
-                    }
-                    else
-                        localStorage.removeItem('firstLoad');
-                }
-            })();
         </script>
     <link href="lightbox2-2.11.3\src\css\lightbox.css" rel="stylesheet" />
     <style>
