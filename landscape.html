@@ -18,6 +18,27 @@
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async>
+            (function () {
+                if (window.localStorage) {
+                    if (!localStorage.getItem('firstLoad')) {
+                        localStorage['firstLoad'] = true;
+                        window.location.reload();
+                    }
+                    else
+                        localStorage.removeItem('firstLoad');
+                }
+            })();
+            // init Masonry
+            var $grid = $('.grid').masonry({
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                columnWidth: '.grid-sizer'
+            });
+
+            // layout Masonry after each image loads
+            $grid.imagesLoaded().progress(function () {
+                $grid.masonry();
+            });
         </script>
     <link href="lightbox2-2.11.3\src\css\lightbox.css" rel="stylesheet" />
     <style>
@@ -37,17 +58,24 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item active">
-                        <a class="nav-link zoom-in" href="index.html">MENU</a>
+                        <a class="nav-link underline" href="index.html">MENU</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link underline " href="#photography">PHOTOGRAPHY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link underline" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item d-sm-block d-lg-none d-xl-none">
+                        <span class="navbar-text" style="font-size:20px;">
+                            <a href="https://www.instagram.com/kevintoualb_photography/"><span
+                                    class="badge rounded-pill text-dark zoom-in"><i
+                                        class="fab fa-instagram  mx-2 mx-sm-2 mx-md-0 mx-lg-0 fa-2x"></i></span></a>
 
-                    <li class="nav-item">
-                        <a class="nav-link zoom-in" href="index.html#photography">PHOTOGRAPHIE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link zoom-in " href="index.html#about">ABOUT</a>
+                        </span>
                     </li>
                 </ul>
-                <span class="navbar-text" style="font-size:20px;">
+                <span class="navbar-text d-none d-lg-block d-xl-block" style="font-size:20px;">
                     <a href="https://www.instagram.com/kevintoualb_photography/"><span
                             class="badge rounded-pill text-dark zoom-in"><i
                                 class="fab fa-instagram  mx-2 mx-sm-2 mx-md-0 mx-lg-0 fa-2x"></i></span></a>
@@ -61,7 +89,7 @@
                 <p class="display-4">LANDSCAPE</p>
             </div>
             <div class="col-12 text-center">
-                <p class="display-6 text-muted" style="font-size: 2vmax;">All images are captionned by the place they were taken
+                <p class="display-6" style="font-size: 2vmax;">All images are captionned by the place they were taken
                 </p>
             </div>
         </div>
@@ -102,9 +130,9 @@
                     </div>
                     <!-- Grid item -->
                     <div class="col-lg-4 col-md-6 grid-item mb-4">
-                        <a href="IMG/portfolio/landscape/4_land.jpg" data-lightbox="land">
+                        <a href="IMG/portfolio/landscape/4_land.JPG" data-lightbox="land">
                             <img class="img-fluid w-100 mb-3 img-fluid rounded-0 p-3"
-                                src="IMG/portfolio/landscape/4_land.jpg" alt="">
+                                src="IMG/portfolio/landscape/4_land.JPG" alt="">
                         </a>
                         <h2 class="h4">Verdon</h2>
                         <p class="small text-muted font-italic">Lac de Sainte-Croix</p>
@@ -127,9 +155,9 @@
                     </div>
                     <!-- Grid item -->
                     <div class="col-lg-4 col-md-6 grid-item mb-4">
-                        <a href="IMG/portfolio/landscape/7_land.jpg" data-lightbox="land">
+                        <a href="IMG/portfolio/landscape/7_land.JPG" data-lightbox="land">
                             <img class="img-fluid w-100 mb-3 img-fluid rounded-0 p-3"
-                                src="IMG/portfolio/landscape/7_land.jpg" alt=""></a>
+                                src="IMG/portfolio/landscape/7_land.JPG" alt=""></a>
                         <h2 class="h4">Anse Magaud</h2>
                         <p class="small text-muted font-italic">Falaise Ouest</p>
                     </div>
@@ -153,7 +181,7 @@
                     <div class="col-lg-4 col-md-6 grid-item mb-4">
                         <a href="IMG/portfolio/landscape/11_land.JPG" data-lightbox="land">
                             <img class="img-fluid w-100 mb-3 img-fluid rounded-0 p-3"
-                                src="IMG/portfolio/landscape/11_land.jpg" alt="">
+                                src="IMG/portfolio/landscape/11_land.JPG" alt="">
                         </a>
                         <h2 class="h4">Marégau</h2>
                         <p class="small text-muted font-italic">Saint-Mandrier</p>
@@ -175,18 +203,14 @@
                 <a href="https://www.instagram.com/kevintoualb_photography/"><span
                         class="badge rounded-pill text-dark zoom-in"><i
                             class="fab fa-instagram  mx-2 mx-sm-2 mx-md-0 mx-lg-0 fa-2x"></i></span></a>
-                <a
-                    href="mailto:&#107;&#116;&#112;&#104;&#111;&#116;&#111;&#46;&#112;&#114;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
-                    <span class="badge rounded-pill text-dark zoom-in"><i
-                            class="fab fa-solid fa-envelope  mx-2 mx-sm-2 mx-md-0 mx-lg-0 fa-2x"></i></span>
-                </a>
 
-
+                <a href="about.html#donate"><span class="badge rounded-pill text-dark zoom-in"><i
+                            class="fas fa-shopping-basket  mx-2 mx-sm-2 mx-md-0 mx-lg-0 fa-2x"></i></span></a>
             </div>
         </div>
         <!-- Copyright -->
         <div class="text-center text-black text-decoration-none p-3">
-            © 2021 Copyright:
+            © 2023 Copyright:
             <a href="index.html" style="color: black;">KT-PHOTO</a>
         </div>
     </div>

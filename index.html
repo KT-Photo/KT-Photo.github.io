@@ -5,6 +5,9 @@
 TODO:
 bas de page about sur l'index
 link "about" sur chaque page #anchor
+
+-reload sur les pages portfolio..
+
 -->
 
 <head>
@@ -65,7 +68,7 @@ link "about" sur chaque page #anchor
 
         <nav class="navbar navbar-expand-lg navbar-light" id="nav1">
             <a class="navbar-brand" href="index.html"><img class="rounded-circle" src="IMG/logo1.jpg"
-                    alt="Generic placeholder image" width="50" height="50"></a>
+                    alt="moi.png" width="50" height="50"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -73,20 +76,28 @@ link "about" sur chaque page #anchor
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item active">
-                        <a class="nav-link zoom-in" href="index.html">MENU</a>
+                        <a class="nav-link underline" href="index.html">MENU</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link zoom-in" href="#photography">PHOTOGRAPHY</a>
+                        <a class="nav-link underline " href="#photography">PHOTOGRAPHY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link zoom-in " href="#about">ABOUT</a>
+                        <a class="nav-link underline" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item d-sm-block d-lg-none d-xl-none">
+                        <span class="navbar-text" style="font-size:20px;">
+                            <a href="https://www.instagram.com/kevintoualb_photography/"><span
+                                    class="badge rounded-pill text-dark zoom-in"><i
+                                        class="fab fa-instagram  mx-2 mx-sm-2 mx-md-0 mx-lg-0 fa-2x"></i></span></a>
+        
+                        </span>
                     </li>
                 </ul>
-                <span class="navbar-text" style="font-size:20px;">
+                <span class="navbar-text d-none d-lg-block d-xl-block" style="font-size:20px;">
                     <a href="https://www.instagram.com/kevintoualb_photography/"><span
                             class="badge rounded-pill text-dark zoom-in"><i
-                                class="fab fa-instagram  mx-2 mx-sm-2 mx-md-0 mx-lg-0 fa-2x"></i></span>
-                    </a>
+                                class="fab fa-instagram  mx-2 mx-sm-2 mx-md-0 mx-lg-0 fa-2x"></i></span></a>
+
                 </span>
             </div>
         </nav>
@@ -111,12 +122,12 @@ link "about" sur chaque page #anchor
         <div class="row p-4 justify-content-center">
             <div class="col-12 text-center">
                 <p class="display-4" id="photography">PORTFOLIO</p>
-                <p class="text-muted">Click on a theme to browse trough it</p>
+                <p class="text-muted">Click on a theme to browse through it</p>
             </div>
         </div>
 
         <div class="row p-5 justify-content-center fw-bold">
-            <div class="col-lg-4 col-md-8 p-4 m-2rem">
+            <div class="col-lg-2 col-md-4 p-1 m-2rem">
                 <div class="container1">
                     <img class="img-fluid image1" src="IMG/portfolio/landscape1.JPG" alt="">
                     <a href="landscape.html">
@@ -127,7 +138,7 @@ link "about" sur chaque page #anchor
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-8 p-4 m-2rem">
+            <div class="col-lg-2 col-md-4 p-1 m-2rem">
                 <div class="container1">
                     <img class="img-fluid image1" src="IMG/portfolio/portrait.jpg" alt="">
                     <a href="portrait.html">
@@ -138,7 +149,7 @@ link "about" sur chaque page #anchor
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-8 p-4 m-2rem">
+            <div class="col-lg-2 col-md-4 p-1 m-2rem">
                 <div class="container1">
                     <img class="img-fluid image1" src="IMG/portfolio/street.jpg" alt="">
                     <a href="street.html">
@@ -149,7 +160,7 @@ link "about" sur chaque page #anchor
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-8 p-4 m-2rem">
+            <div class="col-lg-2 col-md-4 p-1 m-2rem">
                 <div class="container1">
                     <img class="img-fluid image1" src="IMG/portfolio/other.jpg" alt="">
                     <a href="other.html">
@@ -161,7 +172,7 @@ link "about" sur chaque page #anchor
             </div>
         </div>
         <!--about-->
-        <section class="section about-section" id="about">
+        <section class="section about-section gray-bg" id="about">
             <div class="container">
                 <div class="row p-4 justify-content-center">
                     <div class="col-12 text-center">
@@ -175,11 +186,11 @@ link "about" sur chaque page #anchor
                         </div>
                     </div>
                     <div class="col-6">
-                        <div>
-                            <h3>KT-PHOTO</h3>
-                            <h4>Street/Landscape Photographer &amp; Web Developer</h4>
+                        <div class="about-text">
+                            <h3 class="dark-color">Kevin : KT-PHOTO</h3>
+                            <h4 class="theme-color">Street/Landscape Photographer &amp; Web Developer</h4>
 
-                            <div>
+                            <div class="btn-bar">
                                 <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-warning text-light" data-bs-toggle="modal"
                                     data-bs-target="#Modal">
@@ -202,7 +213,7 @@ link "about" sur chaque page #anchor
                                                             <p>You can either see my work on instagram :
                                                             </p>
                                                         </div>
-                                                        <span class="navbar-text" style="font-size:20px;">
+                                                        <span class="navbar-text" style="font-size:20px">
                                                             <button type="button" class="btn btn-link"
                                                                 data-bs-dismiss="modal">
                                                                 <a href="https://www.instagram.com/kevintoualb_photography/"
@@ -218,10 +229,10 @@ link "about" sur chaque page #anchor
                                                     </div>
                                                     <div class="col-6">
                                                         <div class="text-center">
-                                                            <p>Or just move trough my "portfolio".
+                                                            <p>Or just move through my "portfolio".
                                                             </p>
                                                         </div>
-                                                        <span class="navbar-text" style="font-size:20px;">
+                                                        <span class="navbar-text" style="font-size:20px; padding-left: 10%;">
                                                             <button type="button" class="btn btn-link"
                                                                 data-bs-dismiss="modal">
                                                                 <a href="#photography" target="_blank">
@@ -260,18 +271,12 @@ link "about" sur chaque page #anchor
             <div class="col-lg-2 col-md-6 col-sm-10  col-6 rounded-pill text-center">
                 <a href="https://www.instagram.com/kevintoualb_photography/"><span
                         class="badge rounded-pill text-dark zoom-in"><i
-                            class="fab fa-instagram  mx-2 mx-sm-2 mx-md-0 mx-lg-0 fa-2x"></i></span>
-                </a>
-                <a
-                    href="mailto:&#107;&#116;&#112;&#104;&#111;&#116;&#111;&#46;&#112;&#114;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
-                    <span class="badge rounded-pill text-dark zoom-in"><i
-                            class="fab fa-solid fa-envelope  mx-2 mx-sm-2 mx-md-0 mx-lg-0 fa-2x"></i></span>
-                </a>
+                            class="fab fa-instagram  mx-2 mx-sm-2 mx-md-0 mx-lg-0 fa-2x"></i></span></a>
             </div>
         </div>
         <!-- Copyright -->
         <div class="text-center text-black text-decoration-none p-3">
-            © 2021 Copyright:
+            © 2023 Copyright:
             <a href="index.html" style="color: black;">KT-PHOTO</a>
         </div>
         <!--end footer-->
