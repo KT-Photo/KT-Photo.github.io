@@ -46,6 +46,14 @@ DEBUG :
         a.btn.btn-dark.px-5 {
             font-size: smaller;
         }
+
+    }
+
+    @media screen and (max-width: 991.5px) {
+        p.theme-color.h5{
+            font-size: 1rem;
+        }
+
     }
 
     @media screen and (max-width: 416px) {
@@ -66,8 +74,8 @@ DEBUG :
     <div class="container-fluid text-decoration-none text-dark">
 
         <nav class="navbar navbar-expand-lg navbar-light" id="nav1">
-            <a class="navbar-brand" href="index.html"><img class="rounded-circle" src="IMG/logo1.jpg"
-                    alt="moi.png" width="50" height="50"></a>
+            <a class="navbar-brand" href="index.html"><img class="rounded-circle" src="IMG/logo1.jpg" alt="moi.png"
+                    width="50" height="50"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -88,7 +96,7 @@ DEBUG :
                             <a href="https://www.instagram.com/kevintoualb_photography/"><span
                                     class="badge rounded-pill text-dark zoom-in"><i
                                         class="fab fa-instagram  mx-2 mx-sm-2 mx-md-0 mx-lg-0 fa-2x"></i></span></a>
-        
+
                         </span>
                     </li>
                 </ul>
@@ -178,20 +186,26 @@ DEBUG :
                         <p class="display-4">About me</p>
                     </div>
                 </div>
-                <div class="row align-items-center justify-content-around p-3">
-                    <div class="col-6 text-center">
+                <div class="row align-items-center justify-content-center flex-row-reverse p-3 ">
+                    <div class="col-md-4 col-7 text-center pb-5 pb-md-0 ">
                         <div class="about-img">
                             <img class="img-fluid rounded-circle" src="IMG/logo1.jpg">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-10 text-md-start text-center">
                         <div class="about-text">
-                            <h3 class="dark-color">Kevin : KT-PHOTO</h3>
-                            <h4 class="theme-color">Street/Landscape Photographer &amp; Web Developer</h4>
+                            <h2 class="dark-color">Kevin Toualb</h2>
+                            <p class="theme-color h5">Street/Landscape Photographer &amp; Beginner Web Developer
+                                <br><br>
+                                I've been working since I left my school. I Took a sabbatical year to gain
+                                myself time to think and money for personal project.
+                                I've now a clearer idea of what my future is made.<br><br>
+                                I want to be a Web : designer / developer.
+                            </p>
 
-                            <div class="btn-bar">
+                            <div class="btn-bar pt-2">
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-warning text-light" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-dark text-light" data-bs-toggle="modal"
                                     data-bs-target="#Modal">
                                     View Works
                                 </button>
@@ -207,7 +221,7 @@ DEBUG :
                                             </div>
                                             <div class="modal-body">
                                                 <div class="row">
-                                                    <div class="col-6">
+                                                    <div class="col-6 p-2">
                                                         <div class="text-center">
                                                             <p>You can either see my work on instagram :
                                                             </p>
@@ -226,7 +240,7 @@ DEBUG :
                                                             </button>
                                                         </span>
                                                     </div>
-                                                    <div class="col-6">
+                                                    <div class="col-6 p-2">
                                                         <div class="text-center">
                                                             <p>Or just move through my "portfolio".
                                                             </p>
@@ -254,7 +268,7 @@ DEBUG :
                                     </div>
                                 </div>
                                 <a href="mailto:&#107;&#116;&#112;&#104;&#111;&#116;&#111;&#46;&#112;&#114;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
-                                    class="btn btn-info text-light">Contact Me</a>
+                                    class="btn text-dark underline">Contact Me</a>
                             </div>
                         </div>
                     </div>

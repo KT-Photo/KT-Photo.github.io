@@ -329,10 +329,7 @@ body {
 
 .underline {
     color: #fff;
-    text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 0.15em;
-
     display: inline-block;
     padding: 15px 20px;
     position: relative;
@@ -377,7 +374,6 @@ body {
 .image1 {
     display: block;
     width: 100%;
-    height: Vw;
 }
 
 .overlay1 {
