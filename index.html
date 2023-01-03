@@ -23,11 +23,17 @@ DEBUG :
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="IMG/logo1.jpg" />
     <script src="JS/scroll_down.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
-    </style>
+    <script src="JS/imagesloaded.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async>
+        </script>
+    <script src="JS/masonry.js"></script>
+    <link href="lightbox2-2.11.3\src\css\lightbox.css" rel="stylesheet" />
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+
     .thumbnail {
         position: relative;
     }
@@ -50,7 +56,7 @@ DEBUG :
     }
 
     @media screen and (max-width: 991.5px) {
-        p.theme-color.h5{
+        p.theme-color.h5 {
             font-size: 1rem;
         }
 
@@ -128,13 +134,13 @@ DEBUG :
         <div class="row p-4"></div>
         <div class="row p-4 justify-content-center">
             <div class="col-12 text-center">
-                <p class="display-4" id="photography">PORTFOLIO</p>
+                <p class="display-4" id="photography">PHOTOGRAPHY</p>
                 <p class="text-muted">Click on a theme to browse through it</p>
             </div>
         </div>
 
-        <div class="row p-5 justify-content-center fw-bold">
-            <div class="col-lg-2 col-md-4 p-1 m-2rem">
+        <div class="row p-md-5 p-1 justify-content-center fw-bold">
+            <div class="col-4 p-1 m-1rem">
                 <div class="container1">
                     <img class="img-fluid image1" src="IMG/portfolio/landscape1.JPG" alt="">
                     <a href="landscape.html">
@@ -145,7 +151,7 @@ DEBUG :
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-4 p-1 m-2rem">
+            <div class="col-4 p-1 m-1rem">
                 <div class="container1">
                     <img class="img-fluid image1" src="IMG/portfolio/portrait.jpg" alt="">
                     <a href="portrait.html">
@@ -156,7 +162,7 @@ DEBUG :
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-4 p-1 m-2rem">
+            <div class="col-4 p-1 m-1rem">
                 <div class="container1">
                     <img class="img-fluid image1" src="IMG/portfolio/street.jpg" alt="">
                     <a href="street.html">
@@ -167,7 +173,7 @@ DEBUG :
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-4 p-1 m-2rem">
+            <div class="col-4 p-1 m-1rem">
                 <div class="container1">
                     <img class="img-fluid image1" src="IMG/portfolio/other.jpg" alt="">
                     <a href="other.html">
@@ -178,6 +184,60 @@ DEBUG :
                 </div>
             </div>
         </div>
+
+        <div class="row p-4"></div>
+        <div class="row p-4 justify-content-center">
+            <div class="col-12 text-center">
+                <p class="display-4" id="photography">WEBDESIGN</p>
+                <p class="text-muted">Made with Figma</p>
+            </div>
+        </div>
+
+        <div class="row p-lg-4"></div>
+        <section class="pb-5 p-2">
+            <div class="container text-center">
+                <!-- Masonry grid -->
+                <div class="gallery-wrapper">
+                    <!-- Grid sizer -->
+                    <div class="grid-sizer col-lg-4 col-md-6"></div>
+
+                    <!-- Grid item -->
+                    <div class="col-lg-4 col-md-6 grid-item mb-4">
+                        <a href="IMG/design/BA.png" data-lightbox="land">
+                            <img class="img-fluid w-100 mb-3 img-fluid rounded-0 p-3" src="IMG/design/BA.png" alt="">
+                        </a>
+                        <h2 class="h4">Blue Addiction - Home</h2>
+                        <p class="small text-muted font-italic">A one page for a freediving company</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item mb-4">
+                        <a href="IMG/design/fallen1.png" data-lightbox="land">
+                            <img class="img-fluid w-100 mb-3 img-fluid rounded-0 p-3" src="IMG/design/fallen1.png"
+                                alt="">
+                        </a>
+                        <h2 class="h4">Fallen</h2>
+                        <p class="small text-muted font-italic">A 3 pages website about Interior Design</p>
+                    </div>
+                     <!-- Grid item -->
+                     <div class="col-lg-4 col-md-6 grid-item mb-4">
+                        <a href="IMG/design/serap.png" data-lightbox="land">
+                            <img class="img-fluid w-100 mb-3 img-fluid rounded-0 p-3" src="IMG/design/serap.png" alt="">
+                        </a>
+                        <h2 class="h4">Serap Gallery</h2>
+                        <p class="small text-muted font-italic">A photographer portfolio</p>
+                    </div>
+                    <!-- Grid item -->
+                    <div class="col-lg-4 col-md-6 grid-item mb-4">
+                        <a href="IMG/design/VA.png" data-lightbox="land">
+                            <img class="img-fluid w-100 mb-3 img-fluid rounded-0 p-3" src="IMG/design/VA.png" alt="">
+                        </a>
+                        <h2 class="h4">Vincent Karcher</h2>
+                        <p class="small text-muted font-italic">Famous photograph website, remastered</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
         <!--about-->
         <section class="section about-section gray-bg" id="about">
             <div class="container">
@@ -245,7 +305,8 @@ DEBUG :
                                                             <p>Or just move through my "portfolio".
                                                             </p>
                                                         </div>
-                                                        <span class="navbar-text" style="font-size:20px; padding-left: 10%;">
+                                                        <span class="navbar-text"
+                                                            style="font-size:20px; padding-left: 10%;">
                                                             <button type="button" class="btn btn-link"
                                                                 data-bs-dismiss="modal">
                                                                 <a href="#photography" target="_blank">
