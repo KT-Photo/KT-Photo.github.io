@@ -271,6 +271,11 @@ html {
     animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000);
 }
 
+.fade-in4 {
+    -webkit-animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+}
+
 .fade-in.carousel-caption {
     -webkit-animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000);
@@ -495,44 +500,7 @@ html {
     }
 }
 
-.pulsate-fwd {
-    -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
-    animation: pulsate-fwd 2s ease-in-out infinite both;
-}
 
-@-webkit-keyframes pulsate-fwd {
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -webkit-transform: scale(0.99);
-        transform: scale(0.99);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@keyframes pulsate-fwd {
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
 
 .bounce-in-bottom {
     -webkit-animation: bounce-in-bottom 1.1s both;
