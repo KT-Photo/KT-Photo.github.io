@@ -8,6 +8,10 @@ body {
     height: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .fa {
     color: black;
 }
@@ -715,4 +719,116 @@ body {
 
 .hideme {
     opacity: 0;
+}
+
+.tracking-in-contract {
+    -webkit-animation: tracking-in-contract 3s cubic-bezier(.215, .61, .355, 1.000) both;
+    animation: tracking-in-contract 3s cubic-bezier(.215, .61, .355, 1.000) both
+}
+
+@-webkit-keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1.2em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        letter-spacing: 0.5rem;
+        word-spacing: 0.5rem;
+        opacity: 1
+    }
+}
+
+@keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1.2em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        letter-spacing: 0.5rem;
+        word-spacing: 0.5rem;
+        opacity: 1
+    }
+}
+
+.slide-in-bottom {
+    -webkit-animation: slide-in-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.pulsate-fwd {
+    -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+    animation: pulsate-fwd 1s ease-in-out infinite both;
+
+}
+
+@-webkit-keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }

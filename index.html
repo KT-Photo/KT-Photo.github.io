@@ -3,8 +3,7 @@
 
 <!--
 TODO:
-about me : responsive + link cv + more text.
-new page with some webdesign I made.
+about me : link cv
 DEBUG :
 
 -->
@@ -21,6 +20,7 @@ DEBUG :
     <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
     <link href="fontawesome/css/all.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" />
+
     <link rel="icon" type="image/png" href="IMG/logo1.jpg" />
     <script src="JS/scroll_down.js"></script>
     <script src="JS/imagesloaded.pkgd.js"></script>
@@ -49,8 +49,8 @@ DEBUG :
             font-size: x-large;
         }
 
-        a.btn.btn-dark.px-5 {
-            font-size: smaller;
+        #about_me {
+            font-size: x-small;
         }
 
     }
@@ -67,10 +67,10 @@ DEBUG :
             font-size: 1.05rem;
         }
 
-        a.btn.btn-dark.px-5 {
-            font-size: smaller;
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
+        #about_me {
+            font-size: x-small;
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
     }
 </style>
@@ -121,11 +121,12 @@ DEBUG :
                 <div class="thumbnail text-center">
                     <img src="IMG/portfolio/landscape.JPG" alt="" class="img-fluid">
                     <div class="caption p-3">
-                        <h1 class="display-4 font-weight-bold d-none d-lg-block">KEVIN TOUALB - PHOTOGRAPHY</h1>
-                        <h1 class="display-5 font-weight-bold d-sm-block d-md-block d-lg-none" id="main_absol">KEVIN
-                            TOUALB - PHOTOGRAPHY</h1>
+                        <h1 class="display-4 font-weight-bold d-none d-lg-block tracking-in-contract kevint">KEVIN TOUALB</h1>
+                        <h1 class="display-5 font-weight-bold d-sm-block d-md-block d-lg-none tracking-in-contract kevint"
+                            id="main_absol">KEVIN
+                            TOUALB</h1>
                         <hr class="my-4">
-                        <a href="#about" class="btn btn-dark px-5">ABOUT</a>
+                        <a href="#about" id="about_me" class="btn btn-dark px-3 zoom-in px-sm-5 slide-in-bottom">ABOUT ME</a>
                     </div>
                 </div>
             </div>
@@ -135,14 +136,14 @@ DEBUG :
         <div class="row p-4 justify-content-center">
             <div class="col-12 text-center">
                 <p class="display-4" id="photography">PHOTOGRAPHY</p>
-                <p class="text-muted">Click on a theme to browse through it</p>
+                <p class="text-muted pulsate-fwd">Click on a theme to browse through it</p>
             </div>
         </div>
 
-        <div class="row p-md-5 p-1 justify-content-center fw-bold">
-            <div class="col-4 p-1 m-1rem">
+        <div class="row p-md-5 p-1 justify-content-center fw-bold ">
+            <div class="col-4 p-1 m-1rem ">
                 <div class="container1">
-                    <img class="img-fluid image1" src="IMG/portfolio/landscape1.JPG" alt="">
+                    <img class="img-fluid image1 " src="IMG/portfolio/landscape1.JPG" alt="">
                     <a href="landscape.html">
                         <div class="overlay1">
                             <div class="text1">LANDSCAPE</div>
@@ -151,7 +152,7 @@ DEBUG :
                 </div>
             </div>
 
-            <div class="col-4 p-1 m-1rem">
+            <div class="col-4 p-1 m-1rem ">
                 <div class="container1">
                     <img class="img-fluid image1" src="IMG/portfolio/portrait.jpg" alt="">
                     <a href="portrait.html">
@@ -162,9 +163,9 @@ DEBUG :
                 </div>
             </div>
 
-            <div class="col-4 p-1 m-1rem">
+            <div class="col-4 p-1 m-1rem ">
                 <div class="container1">
-                    <img class="img-fluid image1" src="IMG/portfolio/street.jpg" alt="">
+                    <img class="img-fluid image1 " src="IMG/portfolio/street.jpg" alt="">
                     <a href="street.html">
                         <div class="overlay1">
                             <div class="text1">STREET</div>
@@ -173,7 +174,7 @@ DEBUG :
                 </div>
             </div>
 
-            <div class="col-4 p-1 m-1rem">
+            <div class="col-4 p-1 m-1rem ">
                 <div class="container1">
                     <img class="img-fluid image1" src="IMG/portfolio/other.jpg" alt="">
                     <a href="other.html">
@@ -217,8 +218,8 @@ DEBUG :
                         <h2 class="h4">Fallen</h2>
                         <p class="small text-muted font-italic">A 3 pages website about Interior Design</p>
                     </div>
-                     <!-- Grid item -->
-                     <div class="col-lg-4 col-md-6 grid-item mb-4">
+                    <!-- Grid item -->
+                    <div class="col-lg-4 col-md-6 grid-item mb-4">
                         <a href="IMG/design/serap.png" data-lightbox="land">
                             <img class="img-fluid w-100 mb-3 img-fluid rounded-0 p-3" src="IMG/design/serap.png" alt="">
                         </a>
@@ -233,7 +234,7 @@ DEBUG :
                         <h2 class="h4">Vincent Karcher</h2>
                         <p class="small text-muted font-italic">Famous photograph website, remastered</p>
                     </div>
-                   
+
                 </div>
             </div>
         </section>
