@@ -40,6 +40,107 @@ html {
     line-height: 47px;
 }
 
+#nav1 li a {
+    color: black;
+    font-size: 20px;
+}
+
+#nav1 li {
+    margin-left: 6.5%;
+}
+
+.m-1rem {
+    margin: 1rem;
+}
+
+.m-2rem {
+    margin: 2rem;
+}
+
+.container1 {
+    position: relative;
+    width: 100%;
+}
+
+.image1 {
+    display: block;
+    width: 100%;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #00000091;
+}
+
+.container1:hover .overlay1 {
+    opacity: 1;
+}
+
+.text1 {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .6s ease;
+}
+
+.container1:hover .overlay2 {
+    opacity: 1;
+}
+
+.text_bott_center {
+    color: white;
+    font-size: 3vw;
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img_thumb {
+    border: 4vw solid rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+.text_bott_center_paysage {
+    color: white;
+    font-size: 3vw;
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* ANIMATIONS : (not mine) */
 @-webkit-keyframes puff-in-center {
     0% {
         -webkit-transform: scale(2);
@@ -361,110 +462,6 @@ html {
     width: 100%;
     left: 0;
 }
-
-#nav1 li a {
-    color: black;
-    font-size: 20px;
-}
-
-#nav1 li {
-    margin-left: 6.5%;
-}
-
-.m-1rem {
-    margin: 1rem;
-}
-
-.m-2rem {
-    margin: 2rem;
-}
-
-.container1 {
-    position: relative;
-    width: 100%;
-}
-
-.image1 {
-    display: block;
-    width: 100%;
-}
-
-.overlay1 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #00000091;
-}
-
-.container1:hover .overlay1 {
-    opacity: 1;
-}
-
-.text1 {
-    color: white;
-    font-size: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-/*PORTFOLIO CSS*/
-.overlay2 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .6s ease;
-}
-
-.container1:hover .overlay2 {
-    opacity: 1;
-}
-
-.text_bott_center {
-    color: white;
-    font-size: 3vw;
-    position: absolute;
-    top: 82%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.img_thumb {
-    border: 4vw solid rgb(255, 255, 255);
-    border-radius: 3px;
-}
-
-.text_bott_center_paysage {
-    color: white;
-    font-size: 3vw;
-    position: absolute;
-    top: 78%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-/*PORTFOLIO CSS*/
 
 
 .wobble-hor-bottom {
@@ -800,3 +797,4 @@ html {
         transform: scale(1);
     }
 }
+/* ANIMATIONS : (not mine) end */
