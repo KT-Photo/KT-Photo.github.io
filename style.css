@@ -140,7 +140,25 @@ html {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
 /* ANIMATIONS : (not mine) */
+.roll-in-left {
+    animation: roll-in-left 1s ease-out both;
+}
+
+@keyframes roll-in-left {
+    0% {
+        transform: translateX(-800px) rotate(-540deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+
 @-webkit-keyframes puff-in-center {
     0% {
         -webkit-transform: scale(2);
@@ -797,4 +815,5 @@ html {
         transform: scale(1);
     }
 }
+
 /* ANIMATIONS : (not mine) end */
